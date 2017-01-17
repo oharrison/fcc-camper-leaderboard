@@ -4,17 +4,21 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { LeaderboardComponent } from './leaderboard/leaderboard.component';
+
+import { CamperDataService } from './services/camper-data.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LeaderboardComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [CamperDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

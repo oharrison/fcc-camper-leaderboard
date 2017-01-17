@@ -1,0 +1,22 @@
+{
+  "name": "fcc-camper-leaderboard",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Onel Harrison <me@onelharrison.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/assets/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  }
+}

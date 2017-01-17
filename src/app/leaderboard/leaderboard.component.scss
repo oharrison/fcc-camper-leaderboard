@@ -1,0 +1,52 @@
+table {
+  background-color: grey;
+  width: 100%;
+
+  thead, tbody {
+    text-align: center;
+  }
+
+  thead {
+    background-color: lightgrey;
+  }
+
+  tr {
+    &.odd {
+      background-color: lightgrey;
+    }
+    &.even {
+      background-color: white;
+    }
+    th, td {
+      padding: 0.5em;
+    }
+    th {
+      text-transform: uppercase;
+    }
+  }
+}
+
+.align-left {
+  text-align: left;
+}
+
+.load-trigger:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.camper-id {
+  align-items: center;
+  justify-content: flex-start;
+
+  #camper-image {
+    width: 36px;
+    height: 36px;
+    border: 1px solid darkgreen;
+    border-radius: 5px;
+  }
+
+  #camper-name {
+    margin-left: 1em;
+  }
+}

@@ -1,0 +1,42 @@
+@import "assets/font-awesome/scss/font-awesome";
+
+.flex-container {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+
+  header {
+    justify-content: center;
+    align-items: center;
+    background-color: darkgreen;
+    flex-grow: 1;
+
+    h1 {
+      color: white;
+      padding: 0 2em;
+      text-align: center;
+    }
+  }
+
+  footer {
+    background: black;
+    justify-content: space-around;
+    color: white;
+    font-size: 14pt;
+
+    a:link, a:visited, a:active {
+      color: inherit;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}

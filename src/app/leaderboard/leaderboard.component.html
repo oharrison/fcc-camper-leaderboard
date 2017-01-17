@@ -1,0 +1,26 @@
+<table class="full-width">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th class="align-left">camper name</th>
+      <th class="load-trigger" (click)="loadRecentData()">points in past 30 days &nbsp;
+        <i *ngIf="recent" class="fa fa-caret-down"></i>
+      </th>
+      <th class="load-trigger" (click)="loadAllTimeData()">all time points &nbsp;
+        <i *ngIf="alltime" class="fa fa-caret-down"></i>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let camper of leaders; let position = index; let isOdd = odd; let isEven = even"
+        [ngClass]="{'odd': isOdd, 'even': isEven }">
+      <td>{{ position + 1 }}</td>
+      <td class="flex-container camper-id">
+        <img id="camper-image" src="{{ camper.imageUrl }}">
+        <span id="camper-name">{{ camper.username }}</span>
+      </td>
+      <td>{{ camper.recentPoints }}</td>
+      <td>{{ camper.alltimePoints }}</td>
+    </tr>
+  </tbody>
+</table>
